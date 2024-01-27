@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deber JavaScript y POO 1</title>
+</head>
+
+<body>
+    <script>
+        let numeroDeElementos = parseInt(prompt("Ingrese numero de elementos: "));
+        let var1 = [0, 1];
+        for (let i = 0; i < numeroDeElementos - 2; i++) {
+           let varY = 0;
+            for (let j = 0; j < var1.length; j++) {
+                varY = varY + var1[j];
+            }
+            var1.push(varY);
+        }
+        console.log(var1)
+
+    </script>
+
+</body>
+
+</html>

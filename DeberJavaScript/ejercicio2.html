@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deber JavaScript y POO 2</title>
+</head>
+
+<body>
+    <script>
+        const arreglo = ["knfvjfdn", 45, 86, 1000, 4562, 56, 9, 1,5,200000, 'hola', true];
+        const arreOrd = [];
+
+        for (let i = 0; i < arreglo.length; i++) {
+            if (typeof arreglo[i] === 'number') {
+                arreOrd.push(arreglo[i]);         
+            }
+        }
+        const n=arreOrd.length;
+        for (let i = 0; i < n; i++) {
+                for (let j = 0; j < n - i - 1; j++) {
+                    if (arreOrd[j] > arreOrd[j + 1]) {
+                        [arreOrd[j], arreOrd[j + 1]] = [arreOrd[j + 1], arreOrd[j]];
+                    }
+                }
+            }
+        console.log(arreOrd);
+   
+    </script>
+</body>
+
+</html>
